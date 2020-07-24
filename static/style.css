@@ -1,0 +1,10 @@
+.html,body{
+    padding: 0px;
+    margin: 0px;
+}
+.Menu{
+    height: 80px;
+    border: 4px solid red;
+    border-color: #cff3d7;
+    background-image: url(http://www.htmlcodes.ws/images/image-codes/repeat-image-1.gif);
+}
