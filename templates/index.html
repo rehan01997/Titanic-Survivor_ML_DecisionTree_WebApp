@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html >
-<!--From https://codepen.io/frytyler/pen/EGdtg-->
+
 <head>
   <meta charset="UTF-8">
-  <title>ML API</title>
-  <link rel="stylesheet" href="style.css">  
+  <title>Titanic Survivors</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 
 <body>
-    <div id="Menu">
+    <div id="menuu" class ="menu">
         <h1>Titanic Survivors</h1>	
     </div>
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<div id="Pclass"><input type="text" class="Pclass"name="Pclass" placeholder="Pclass" required="required" /></div>    
-        <div id="Sex"><input type="text" class="Sex" name="Sex" placeholder="Sex" required="required" /></div> 
+    	<div id="Pclass"><input type="text" class="Pclass"name="Pclass" placeholder="Pclass Eg : 1/0" required="required" /></div>    
+        <div id="Sex"><input type="text" class="Sex" name="Sex" placeholder="Sex Eg : Male-1/Female-0 " required="required" /></div> 
 		<div id="Age"><input type="text" class="Age" name="Age" placeholder="Age" required="required" /></div> 
-        <div id="SibSp"><input type="text" class="SibSp" name="SibSp" placeholder="SibSp" required="required" /></div> 
-        <div id="Parch"><input type="text" class="Parch" name="Parch" placeholder="Parch" required="required" /></div> 
+        <div id="SibSp"><input type="text" class="SibSp" name="SibSp" placeholder="SibSp Eg : 1/0" required="required" /></div> 
+        <div id="Parch"><input type="text" class="Parch" name="Parch" placeholder="Parch Eg : 0/1/2" required="required" /></div> 
         <div id="Fare"><input type="text" class="Fare" name="Fare" placeholder="Fare" required="required" /></div> 
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        <button type="submit" class="predictionButton">Predict</button>
     </form>
-   <br>
-   {{ prediction_text }}
+   <div id="outputP">
+    {{ prediction_text }}
+   </div>
+   
+    <!-- Footer -->
+    <div class='footer'>
+        <p class='footer-description'>Made with ❤️ by Mohd Rehan.</p>
+    </div>
 </body>
 </html>

@@ -1,0 +1,57 @@
+html,body {
+  background-color: lightslategray;
+  height: 100%;
+}
+.menu h1
+{
+  height: 100px;
+  border: 2px solid palevioletred;
+  text-align: center;
+  background-image: url(http://www.htmlcodes.ws/images/image-codes/repeat-image-1.gif);
+}
+#Pclass
+{
+  text-align: center;
+  height: 50px;
+}
+#Sex
+{
+  text-align: center;
+  height: 50px;
+}
+#Age
+{
+  text-align: center;
+  height: 50px;
+}
+#SibSp
+{
+  text-align: center;
+  height: 50px;
+}
+#Parch
+{
+  text-align: center;
+  height: 50px;
+}
+#Fare
+{
+  text-align: center;
+  height: 50px;
+}
+.predictionButton
+{
+  margin-left: 630px;
+}
+#outputP{
+  font-weight: bold;
+  padding: 20px;
+  height: 30px;
+  text-align: center;
+}
+.footer{
+	background-color: #E9E9E9;
+	color: #000000;
+	padding: 12px;
+  text-align: center;
+}
